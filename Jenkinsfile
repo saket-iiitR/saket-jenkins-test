@@ -6,17 +6,17 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                sh 'make' 
+                echo 'Build'
             }
         }
         stage('Test'){
             steps {
-                sh 'make check'
+                sh 'Test'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'make publish'
+                sh 'Deploy'
             }
         }
     }

@@ -7,6 +7,7 @@ pipeline {
         stage('Build') { 
             steps { 
                 echo 'Build'
+                echo 'Testing POLL SCM'
             }
         }
         stage('Test'){
